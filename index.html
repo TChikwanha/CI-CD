@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub CI/CD Pipeline</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">GitHub Actions starter</p>
+        <h1 id="page-title">Continuous Integration and Deployment</h1>
+        <p class="lede">
+          A compact project that tests every change, builds a deployable artifact, and publishes from
+          the main branch.
+        </p>
+      </section>
+
+      <section class="status-panel" aria-label="Pipeline status">
+        <div>
+          <p class="metric-label">Pipeline health</p>
+          <p class="metric-value" id="pipeline-score">--</p>
+        </div>
+        <div>
+          <p class="metric-label">Release target</p>
+          <p class="metric-value">GitHub Pages</p>
+        </div>
+        <div>
+          <p class="metric-label">Build date</p>
+          <p class="metric-value" id="build-date">Local preview</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="pipeline-title">
+        <div class="section-heading">
+          <h2 id="pipeline-title">Pipeline Stages</h2>
+          <p id="pipeline-summary">Loading pipeline summary...</p>
+        </div>
+        <div class="pipeline-grid" id="pipeline-grid"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
