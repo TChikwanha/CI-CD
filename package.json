@@ -1,0 +1,24 @@
+{
+  "name": "github-ci-cd-starter",
+  "version": "1.0.0",
+  "description": "A lightweight GitHub Actions CI/CD starter project with tests, build output, and GitHub Pages deployment.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "lint": "node scripts/lint.mjs",
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "ci": "npm run lint && npm test && npm run build"
+  },
+  "keywords": [
+    "github-actions",
+    "continuous-integration",
+    "continuous-deployment",
+    "github-pages"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
